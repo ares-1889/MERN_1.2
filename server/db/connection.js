@@ -3,7 +3,8 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const uri = process.env.ATLAS_URI || "";
+//const uri = process.env.ATLAS_URI || "";
+const uri ="mongodb+srv://Apar_Shrestha:iambatman@nodeexpressprojects.lkegi.mongodb.net/?retryWrites=true&w=majority&appName=NodeExpressProjects"
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
